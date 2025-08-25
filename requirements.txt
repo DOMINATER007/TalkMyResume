@@ -2,7 +2,7 @@ streamlit
 requests
 python-dotenv
 google-generativeai
-murf-api
+murf
 pdfplumber
 spacy
 scikit-learn
