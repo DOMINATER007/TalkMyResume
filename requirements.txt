@@ -1,6 +1,8 @@
-murf
 streamlit
+requests
+python-dotenv
 google-generativeai
-scikit-learn
+murf-api
 pdfplumber
-python-docx
+spacy
+scikit-learn

@@ -1,5 +1,4 @@
 import pdfplumber
-import docx
 import re
 import spacy
 import json
@@ -29,19 +28,19 @@ def read_pdf(file_path):
     return text
 
 
-def read_docx(file_path):
-    doc = docx.Document(file_path)
-    return "\n".join([p.text for p in doc.paragraphs])
+# def read_docx(file_path):
+#     doc = docx.Document(file_path)
+#     return "\n".join([p.text for p in doc.paragraphs])
 
 
 def read_resume(file_path):
     file_path = Path(file_path)
     if file_path.suffix.lower() == ".pdf":
         return read_pdf(file_path)
-    elif file_path.suffix.lower() in [".docx", ".doc"]:
-        return read_docx(file_path)
+    # elif file_path.suffix.lower() in [".docx", ".doc"]:
+    #     return read_docx(file_path)
     else:
-        raise ValueError("Unsupported file format. Use PDF or DOCX.")
+        raise ValueError("Unsupported file format. Use PDF")
 
 # ---------------------------
 # NLP Extraction helpers
