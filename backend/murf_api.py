@@ -5,11 +5,11 @@ import requests
 from murf import Murf
 from murf.core.api_error import ApiError
 from dotenv import load_dotenv
-
+import streamlit as st
 # ---------- Setup ----------
 # Load .env file
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
-API_KEY = os.getenv("MURF_API_KEY")
+API_KEY = st.secrets("MURF_API_KEY")
 client = Murf(api_key=API_KEY)
 
 # Output folder fixed to ../data/output_audio
