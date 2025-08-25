@@ -50,7 +50,24 @@ st.markdown(
     '<div class="subtitle">An AI-powered vocal assistant that reviews resumes in distinct tones — such as a recruiter’s perspective or a career coach’s guidance.</div>',
     unsafe_allow_html=True
 )
+sample_dir = "data/sample_resumes"
+output_audio_dir = "data/output_audio"
 
+
+def clear_directory(directory):
+    """Delete all files in the given directory"""
+    files = glob.glob(os.path.join(directory, "*"))
+    for f in files:
+        try:
+            os.remove(f)
+            print(f"Deleted: {f}")
+        except IsADirectoryError:
+            print(f"Skipping directory: {f}")
+
+
+# Clear both
+clear_directory(sample_dir)
+clear_directory(output_audio_dir)
 # Create folder for resumes
 SAMPLE_DIR = "data/sample_resumes"
 os.makedirs(SAMPLE_DIR, exist_ok=True)

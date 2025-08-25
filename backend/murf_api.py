@@ -68,19 +68,19 @@ def _tts_generate(text, voice_id, fmt="MP3", channel_type=None,
 
 # ---------- Category Functions ----------
 def recruiter_voice(text, name="default"):
-    """Recruiter — clear, professional."""
+    """Recruiter — strong, professional male voice."""
     safe = _safe_name(name)
     out_path = os.path.join(OUTPUT_DIR, f"recruiter_{safe}.mp3")
 
     audio_url = _tts_generate(
         text=text,
-        voice_id="en-US-terrell",
+        voice_id="en-US-Maverick",   # deep male voice
         fmt="MP3",
         channel_type="STEREO",
         sample_rate=44100,
-        style="Newscast",
-        rate=0,
-        pitch=0
+        style="Conversational",   # or "Strong" if available
+        rate=-5,   # slightly slower for authority
+        pitch=-3   # deeper tone
     )
     _save_from_url(audio_url, out_path)
     return out_path
