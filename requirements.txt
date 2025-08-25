@@ -1,6 +1,6 @@
-dotenv
 murf
 streamlit
 google-generativeai
 scikit-learn
 pdfplumber
+python-docx
