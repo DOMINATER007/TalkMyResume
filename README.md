@@ -65,11 +65,11 @@ It helps candidates improve their resumes by allowing them to **hear reviews** i
 ---
 ## Working
 
--Upload your resume (PDF/DOCX).
--Select the review persona (Career Coach / ATS / Recruiter).
--The system parses resume content and analyzes it using Gemini Flash 1.5.
--Feedback is generated as both text report and voice review (via Murf AI).
--Download your feedback in audio (MP3) or PDF format.
+- Upload your resume (PDF/DOCX).
+- Select the review persona (Career Coach / ATS / Recruiter).
+- The system parses resume content and analyzes it using Gemini Flash 1.5.
+- Feedback is generated as both text report and voice review (via Murf AI).
+- Download your feedback in audio (MP3) or PDF format.
 
 ---
 ## 🔮 Future Roadmap & Scalability
