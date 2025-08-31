@@ -46,4 +46,40 @@ It helps candidates improve their resumes by allowing them to **hear reviews** i
    ```bash
    git clone https://github.com/DOMINATER007/TalkMyResume.git
    cd TalkMyResume
+2. Create a virtual environment
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # (Linux/Mac)
+   venv\Scripts\activate      # (Windows)
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+4. Add API keys in .env file
+   ```bash
+   GEMINI_API_KEY=your_gemini_key
+   MURF_API_KEY=your_murf_key
+5. Run the Streamlit app
+   ```bash
+   streamlit run app.py
+
+---
+## Working
+
+-Upload your resume (PDF/DOCX).
+-Select the review persona (Career Coach / ATS / Recruiter).
+-The system parses resume content and analyzes it using Gemini Flash 1.5.
+-Feedback is generated as both text report and voice review (via Murf AI).
+-Download your feedback in audio (MP3) or PDF format.
+
+---
+## 🔮 Future Roadmap & Scalability
+
+- **Job Description Upload** → Compare resumes with job descriptions for ATS-tailored feedback.
+- **Interview Prep Mode** → Generate mock interview questions based on resume content.
+- **Multilingual Support** → Reviews in multiple languages for global candidates.
+- **Smart Resume Editor** → Inline editing with AI-suggested improvements.
+- **Gamified Progress Tracking** → Resume improvement badges (e.g., “ATS Friendly”, “Impact Driven”).
+- **Integration APIs** → Provide APIs for career platforms, job portals, and universities.
+- **Privacy Mode** → Local-only execution so no resume data leaves the device.
+- **Custom Personas** → Add new review modes (e.g., Hiring Manager, Industry Expert).  
 
