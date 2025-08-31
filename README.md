@@ -33,3 +33,17 @@ It helps candidates improve their resumes by allowing them to **hear reviews** i
 
 ---
 
+## ▶️ Demo
+
+🔗 **Live App**: [TalkMyResume on Streamlit](https://talkmyresume-ashishlimitless.streamlit.app/)  
+💻 **Source Code**: [GitHub Repo](https://github.com/DOMINATER007/TalkMyResume)  
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/DOMINATER007/TalkMyResume.git
+   cd TalkMyResume
+
